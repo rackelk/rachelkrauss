@@ -1,0 +1,145 @@
+@charset "UTF-8";
+
+#navigation {
+padding: 0px 68px 45px 68px;
+background-color: #B0B0B0;
+opacity: .75;	
+}
+#navigation ul {
+	list-style-type: none;
+	color: #7f0000;
+	text-decoration: none;
+	font-size:35px;	
+	
+}
+#navigation a {
+	color: #7f0000;
+	width: 20%;
+	display: block;
+	float: left;
+	text-align: left;
+	text-decoration: none;
+	
+}
+
+a:hover {
+	font-weight: bolder;
+	background-color: white;
+}
+
+.hello {
+	float: left;
+	margin: 30px;
+	background-color: white;
+	opacity: .8;
+	padding: 5px 8px 5px 8px;
+}
+
+body {
+	font-family: Century Gothic, sans-serif;
+	text-align: left;
+	margin: 30px;
+	background: url("https://static.pexels.com/photos/4360/sea-city-mountains-landmark.jpeg");
+	background-size: cover;
+    background-position: center;
+    
+}
+.column1, .column2 {
+	width: 500px;
+	float: left;
+	margin: 30px;
+	background-color: white;
+	opacity: .8;
+	padding: 5px 5px 5px 5px;
+}
+
+h1 {
+	font-family: Century Gothic, sans-serif;
+	font-size: 75px;
+	text-align: left;
+	margin-top: 15px;
+	color: white;
+}
+
+h2 {
+	font-family: Century Gothic, sans-serif;
+	font-size: 75px;
+	text-align: left;
+	margin-top: 15px;
+	color: #7f0000;
+}
+
+.boxed {
+	background-color: white;
+	opacity: .8;
+	padding-left: 5px;
+	padding-bottom: 5px;
+}
+
+.activities {
+	width: 500px;
+	float: left;
+	margin: 30px;
+}
+
+@media (min-width: 768px) {
+    /*
+        750 - (236*3) - (21*2)
+        236/750 = 31.4666667%
+        20/750 = 2.6666667%
+    */
+    .container {
+        width: 750px;
+        margin: 15px auto;
+    }
+
+    .col-4 {
+        width: 31.4666667%;
+        margin-right: 2.6666667%;
+    }
+
+}
+
+@media (min-width: 992px) {
+    /*
+        960 - (306*3) - (21*2)
+        306/960 = 31.875%
+        21/960 = 2.1875%
+    */
+    .container {
+        width: 960px;
+        margin: 20px auto 5px;
+    }
+
+    .col-4 {
+        width: 31.875%;
+        margin-right: 2.1875%;
+    }
+
+    h2 {
+        font-size: 3em;
+    }
+}
+
+@media (min-width: 1200px) {
+    /*
+        1000 - (320*3) - (20*2)
+        320/1000 = 32%
+        20/1000 = 2%
+    */
+    .container {
+        width: 1000px;
+        margin: 40px auto 10px;
+    }
+
+    .col-4 {
+        width: 32%;
+        margin-right: 2%;
+    }
+
+    h2 {
+        font-size: 3.75em;
+        font-weight: 200;
+    }
+}
+
